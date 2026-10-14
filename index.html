@@ -3,236 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Personal - Fullstack Web Developer">
-    <title>Alex Putra — Portofolio Personal</title>
+    <meta name="description" content="Portofolio Personal - Charlie Nicholas // Fullstack Web Developer">
+    <title>CHARLIE NICHOLAS // Player One — Neon Arcade Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header & Navigasi -->
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <!-- Header -->
     <header>
         <div class="container header-inner">
-            <a href="#home" class="logo">AP<span>.</span></a>
+            <a href="#home" class="logo">
+                <span class="logo-icon">◈</span>
+                NEON<span>ARCADE</span>
+                <span class="logo-tier">PLAYER ONE // CHARLIE</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="#home">Beranda</a></li>
                     <li><a href="#about">Tentang</a></li>
-                    <li><a href="#skills">Keahlian</a></li>
-                    <li><a href="#projects">Proyek</a></li>
-                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#skills">Loadout</a></li>
+                    <li><a href="#projects">Showcase</a></li>
                 </ul>
             </nav>
+            <a href="https://github.com/charlienicholas" class="btn-header">MY GITHUB ▸</a>
         </div>
     </header>
 
     <main>
-        <!-- Beranda / Home -->
+        <!-- HOME / HERO -->
         <section id="home">
             <div class="container hero">
-                <div class="hero-text">
-                    <span class="badge">✦ Tersedia untuk proyek freelance</span>
-                    <h1>Halo, saya <span>Charlie Nicholas</span></h1>
-                    <h2>Web Developer &amp; UI Enthusiast</h2>
+                <div class="hero-text">git 
+                    <div class="server-badge"><span class="dot"></span> MEDAN NODE ONLINE • FULLSTACK ENGINE • 12ms</div>
+                    <h1>ENTER THE <span class="neon-pink">NEON</span> <span class="neon-cyan">ARCADE</span></h1>
+                    <h2>Fullstack Web Developer &bull; D3 Manajemen Informatika</h2>
                     <p>
-                        Mahasiswa Informatika yang antusias membangun antarmuka web yang bersih, 
-                        cepat, dan mudah digunakan. Fokus pada HTML, CSS, dan desain yang berpusat pada pengguna.
+                        Halo, saya <strong>Charlie Nicholas</strong>. Mahasiswa D3 Manajemen Informatika di Politeknik Negeri Medan. 
+                        Sekarang fokus belajar Frontend menggunakan HTML, CSS (Tailwind), dan JavaScript (DOM).
                     </p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
-                        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                        <a href="#projects" class="btn btn-primary">▶ PLAY SHOWCASE</a>
+                        <a href="#contact" class="btn btn-ghost">JOIN SQUAD</a>
                     </div>
-                    <div class="hero-meta">
-                        <div><strong>3+</strong> Tahun Belajar</div>
-                        <div><strong>10+</strong> Proyek Selesai</div>
-                        <div><strong>Bandung</strong> Berbasis</div>
+                    <div class="hero-stats">
+                        <div><strong>7+</strong><span>Core Technologies</span></div>
+                        <div><strong>2025</strong><span>Polmed Enrollment</span></div>
+                        <div><strong>LVL 24</strong><span>Medan, Sumut</span></div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <img src="images/profile.jpg" alt="Foto Profil Alex Putra">
-                        <div class="profile-info">
-                            <h3>Alex Putra</h3>
-                            <p>Front-End Developer</p>
+
+                <div class="hero-visual">
+                    <!-- 3D Retro-Futuristic Element -->
+                    <div class="scene">
+                        <div class="cube">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face right"></div>
+                            <div class="face left"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                        <div class="cube-shadow"></div>
+                        <div class="grid-floor"></div>
+                    </div>
+
+                    <!-- Hologram Profile Card -->
+                    <div class="holo-card">
+                        <div class="holo-corner tl"></div>
+                        <div class="holo-corner tr"></div>
+                        <div class="holo-corner bl"></div>
+                        <div class="holo-corner br"></div>
+                        <div class="holo-img">
+                            <img src="images/profile.jpg" alt="Foto Profil Charlie Nicholas">
+                            <span class="holo-tag">ID: P1-CHARLIE • FULLSTACK</span>
+                        </div>
+                        <div class="holo-info">
+                            <h3>CHARLIE NICHOLAS</h3>
+                            <p>CLASS: FULLSTACK // HP 100/100</p>
+                            <div class="xp-bar"><span style="width:98%"></span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Tentang Saya & Pendidikan -->
+        <!-- ABOUT & EDUCATION -->
         <section id="about">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">Tentang Saya</span>
-                    <h2>Mengenal Lebih Dekat</h2>
-                    <p class="section-desc">Perjalanan akademik dan passion saya di dunia teknologi.</p>
+                    <span class="eyebrow">// DOSSIER 02 — PLAYER LORE</span>
+                    <h2>Tentang Saya &amp; Pendidikan</h2>
+                    <p>Perjalanan akademik di Politeknik Negeri Medan dan passion saya di dunia pemrograman.</p>
                 </div>
                 <div class="about-grid">
-                    <div class="about-text">
+                    <div class="glass-card bio">
+                        <h3><span class="neon-cyan">▣</span> ORIGIN STORY</h3>
                         <p>
-                            Saya adalah mahasiswa yang memiliki ketertarikan besar pada pengembangan web dan desain antarmuka. 
-                            Saya percaya bahwa teknologi yang baik adalah teknologi yang tidak hanya berfungsi, tetapi juga menyenangkan untuk digunakan.
+                            Saya adalah seorang pelajar yang tertarik di dunia web development. Sekarang fokus belajar Frontend menggunakan HTML, CSS (Tailwind), dan JavaScript (DOM).
                         </p>
                         <p>
-                            Saat ini saya mendalami pengembangan web front-end dengan HTML5 dan CSS3 modern, serta prinsip desain responsif dan aksesibilitas. 
-                            Di waktu luang, saya senang mengerjakan proyek open-source kecil dan mengikuti komunitas pengembang lokal.
+                            Saat ini saya sedang menempuh pendidikan Diploma Tiga (D3) di Politeknik Negeri Medan, mengeksplorasi berbagai teknologi modern 
+                            serta memperkuat fondasi logika pemrograman seperti C++, Java, PHP, dan Flutter.
                         </p>
-                        <ul class="about-list">
-                            <li>Berbasis di Bandung, Indonesia</li>
-                            <li>Fokus: Front-End Development &amp; UI Design</li>
-                            <li>Hobi: Fotografi, Membaca, Ngoding</li>
+                        <ul class="quest-list">
+                            <li>📍 Base Camp: Medan, Sumatera Utara</li>
+                            <li>🎯 Main Quest: Frontend &amp; Fullstack Exploration</li>
+                            <li>⚡ Tech Stack: HTML, CSS, JS, PHP, C++, Java, Git</li>
                         </ul>
                     </div>
-                    <div class="education">
-                        <h3>Riwayat Pendidikan</h3>
-                        <article class="edu-card">
-                            <div class="edu-year">2022 — Sekarang</div>
-                            <h4>S1 Teknik Informatika</h4>
-                            <p class="edu-school">Universitas Telkom — Bandung</p>
-                            <p class="edu-detail">IPK 3.82 / 4.00 — Aktif di Himpunan Mahasiswa Informatika dan Lab Riset Web.</p>
+                    <div class="glass-card timeline">
+                        <h3><span class="neon-pink">▣</span> QUEST LOG — PENDIDIKAN</h3>
+                        <article class="quest">
+                            <span class="quest-year">2025 — SEKARANG • CURRENT QUEST</span>
+                            <h4>D3 Manajemen Informatika</h4>
+                            <p class="school">Politeknik Negeri Medan (Polmed) — Medan</p>
+                            <p>Fokus mendalami pemodelan sistem informasi, basis data, pemrograman web fullstack, dan rekayasa perangkat lunak.</p>
                         </article>
-                        <article class="edu-card">
-                            <div class="edu-year">2019 — 2022</div>
-                            <h4>SMK Rekayasa Perangkat Lunak</h4>
-                            <p class="edu-school">SMKN 1 Bandung</p>
-                            <p class="edu-detail">Lulus dengan predikat Terbaik Jurusan. Juara 2 LKS Web Design Tingkat Kota.</p>
+                        <article class="quest">
+                            <span class="quest-year">2022 — 2025 • TUTORIAL STAGE</span>
+                            <h4>SMK Negeri 9 Medan</h4>
+                            <p class="school">Medan, Sumatera Utara</p>
+                            <p>Mendalami dasar-dasar pemrograman, jaringan komputer, dan pengembangan perangkat lunak tahap awal.</p>
                         </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Keterampilan -->
+        <!-- SKILLS / LOADOUT -->
         <section id="skills">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">Keterampilan</span>
-                    <h2>Keahlian &amp; Tools</h2>
-                    <p class="section-desc">Kombinasi kemampuan teknis dan soft skill yang saya kembangkan.</p>
+                    <span class="eyebrow">// LOADOUT 03 — SKILL TREE</span>
+                    <h2>Keahlian &amp; Arsenal</h2>
+                    <p>Daftar senjata dan teknologi yang saya gunakan untuk menyelesaikan berbagai tantangan koding.</p>
                 </div>
+
                 <div class="skills-grid">
-                    <article class="skill-card">
-                        <div class="skill-icon">◈</div>
-                        <h3>HTML5 Semantik</h3>
-                        <p>Struktur dokumen yang rapi, aksesibel, dan SEO-friendly.</p>
-                        <div class="skill-bar"><span style="width: 92%"></span></div>
+                    <article class="skill-card rarity-legendary">
+                        <div class="skill-top"><span class="rarity">LEGENDARY</span><span class="lvl">LV 95</span></div>
+                        <div class="skill-icon cyan">◈</div>
+                        <h3>HTML &amp; CSS</h3>
+                        <p>Struktur semantik W3C, Flexbox, Grid, dan Tailwind CSS.</p>
+                        <div class="bar"><span style="width:95%"></span></div>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">⬡</div>
-                        <h3>CSS3 Modern</h3>
-                        <p>Flexbox, Grid, animasi, dan desain responsif tanpa framework.</p>
-                        <div class="skill-bar"><span style="width: 88%"></span></div>
+                    <article class="skill-card rarity-legendary">
+                        <div class="skill-top"><span class="rarity">LEGENDARY</span><span class="lvl">LV 90</span></div>
+                        <div class="skill-icon pink">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>Interaktivitas web, manipulasi DOM, dan logika pemrograman modern.</p>
+                        <div class="bar"><span style="width:90%"></span></div>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">▣</div>
-                        <h3>UI / UX Design</h3>
-                        <p>Wireframing dan prototyping dengan Figma, prinsip design system.</p>
-                        <div class="skill-bar"><span style="width: 80%"></span></div>
+                    <article class="skill-card rarity-epic">
+                        <div class="skill-top"><span class="rarity">EPIC</span><span class="lvl">LV 92</span></div>
+                        <div class="skill-icon purple">PHP</div>
+                        <h3>PHP</h3>
+                        <p>Pengembangan sisi server (server-side), koneksi database, dan CRUD aplikasi web.</p>
+                        <div class="bar"><span style="width:92%"></span></div>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">◎</div>
-                        <h3>Responsive Design</h3>
-                        <p>Optimasi mobile-first agar nyaman di semua ukuran layar.</p>
-                        <div class="skill-bar"><span style="width: 85%"></span></div>
+                    <article class="skill-card rarity-epic">
+                        <div class="skill-top"><span class="rarity">EPIC</span><span class="lvl">LV 85</span></div>
+                        <div class="skill-icon green">C++</div>
+                        <h3>C++</h3>
+                        <p>Struktur data, algoritma tingkat lanjut, dan pemahaman logika dasar komputasi.</p>
+                        <div class="bar"><span style="width:85%"></span></div>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">✎</div>
-                        <h3>Problem Solving</h3>
-                        <p>Berpikir analitis dan teliti dalam memecahkan masalah teknis.</p>
-                        <div class="skill-bar"><span style="width: 86%"></span></div>
+                    <article class="skill-card rarity-rare">
+                        <div class="skill-top"><span class="rarity">RARE</span><span class="lvl">LV 84</span></div>
+                        <div class="skill-icon yellow">JAVA</div>
+                        <h3>Java</h3>
+                        <p>Pemrograman berorientasi objek (OOP) dan pengembangan aplikasi terstruktur.</p>
+                        <div class="bar"><span style="width:84%"></span></div>
                     </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">♡</div>
-                        <h3>Kerja Tim &amp; Komunikasi</h3>
-                        <p>Kolaborasi efektif, presentasi, dan manajemen waktu yang baik.</p>
-                        <div class="skill-bar"><span style="width: 90%"></span></div>
+                    <article class="skill-card rarity-epic">
+                        <div class="skill-top"><span class="rarity">EPIC</span><span class="lvl">LV 88</span></div>
+                        <div class="skill-icon pink">GIT</div>
+                        <h3>Git &amp; Version Control</h3>
+                        <p>Manajemen repositori di GitHub, kolaborasi tim, dan versioning.</p>
+                        <div class="bar"><span style="width:88%"></span></div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Proyek -->
+        <!-- PROJECTS / GAME SHOWCASE CAROUSEL -->
         <section id="projects">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">Portofolio</span>
+                    <span class="eyebrow">// ARCADE 04 — GAME SHOWCASE</span>
                     <h2>Proyek Pilihan</h2>
-                    <p class="section-desc">Beberapa karya yang mencerminkan proses dan hasil belajar saya.</p>
+                    <p>Geser carousel (tanpa JavaScript) — portofolio proyek yang telah saya kerjakan.</p>
                 </div>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-thumb thumb-1">Landing Page</div>
-                        <div class="project-body">
-                            <span class="project-tag">HTML • CSS • Responsive</span>
-                            <h3>EduLearn — Landing Page Kursus Online</h3>
-                            <p>Landing page modern untuk platform kursus dengan layout Grid, tipografi rapi, dan CTA yang jelas. Skor Lighthouse 98.</p>
-                            <a href="#" class="project-link">Lihat Detail →</a>
-                        </div>
+
+                <!-- Pure CSS Carousel -->
+                <input type="radio" name="carousel" id="g1" checked>
+                <input type="radio" name="carousel" id="g2">
+                <input type="radio" name="carousel" id="g3">
+                <input type="radio" name="carousel" id="g4">
+
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <article class="game-card">
+                            <div class="game-thumb t1">
+                                <span class="game-badge">WEB APP</span>
+                                <h3>Web Kedai Kopi</h3>
+                                <p>HTML • CSS • JAVASCRIPT</p>
+                            </div>
+                            <div class="game-body">
+                                <div class="game-meta"><span>WPU Tutorial</span><span>Responsive</span></div>
+                                <h4>CoffeeScript — Landing Page Kedai Kopi</h4>
+                                <p>Membuat Web Kedai Kopi dengan HTML, CSS, dan Javascript dari tutorial WPU.</p>
+                                <a href="https://charlienicholas.github.io/Web-Kedai-Kopi-WPU/" class="btn btn-primary btn-sm">▶ PLAY DEMO</a>
+                            </div>
+                        </article>
+
+                        <article class="game-card">
+                            <div class="game-thumb t2">
+                                <span class="game-badge">TOOL</span>
+                                <h3>Kalkulator Sederhana</h3>
+                                <p>HTML • CSS • JAVASCRIPT</p>
+                            </div>
+                            <div class="game-body">
+                                <div class="game-meta"><span>Utility</span><span>DOM</span></div>
+                                <h4>Web Kalkulator Sederhana</h4>
+                                <p>Aplikasi kalkulator berbasis web yang responsif dengan fungsionalitas aritmatika dasar.</p>
+                                <a href="https://charlienicholas.github.io/Kalkulator-Sederhana/" class="btn btn-primary btn-sm">▶ PLAY DEMO</a>
+                            </div>
+                        </article>
+
+                        <article class="game-card">
+                            <div class="game-thumb t3">
+                                <span class="game-badge">PORTFOLIO</span>
+                                <h3>Web Portofolio</h3>
+                                <p>HTML • TAILWIND • JS</p>
+                            </div>
+                            <div class="game-body">
+                                <div class="game-meta"><span>Tailwind CSS</span><span>WebTwo</span></div>
+                                <h4>Portofolio Sederhana v2</h4>
+                                <p>Web Portofolio yang dibuat dengan menggunakan HTML, CSS (Tailwind), dan Javascript.</p>
+                                <a href="https://charlienicholas.github.io/WebTwo/" class="btn btn-primary btn-sm">▶ PLAY DEMO</a>
+                            </div>
+                        </article>
+
+                        <article class="game-card">
+                            <div class="game-thumb t1">
+                                <span class="game-badge">APP</span>
+                                <h3>To-Do List</h3>
+                                <p>HTML • TAILWIND • JS</p>
+                            </div>
+                            <div class="game-body">
+                                <div class="game-meta"><span>Productivity</span><span>Task Management</span></div>
+                                <h4>To-Do List Sederhana</h4>
+                                <p>Web To-Do List yang dibuat dengan menggunakan HTML, CSS (Tailwind), dan Javascript.</p>
+                                <a href="https://charlienicholas.github.io/To-Do-List/" class="btn btn-primary btn-sm">▶ PLAY DEMO</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="carousel-dots">
+                    <label for="g1" class="dot" aria-label="Game 1"></label>
+                    <label for="g2" class="dot" aria-label="Game 2"></label>
+                    <label for="g3" class="dot" aria-label="Game 3"></label>
+                    <label for="g4" class="dot" aria-label="Game 4"></label>
+                </div>
+
+                <!-- Community Features -->
+                <div class="community-grid">
+                    <article class="community-card">
+                        <h3>👾 NICHONET HUB</h3>
+                        <p>Pusat pengembangan proyek personal dan eksperimen teknologi web Charlie Nicholas.</p>
+                        <div class="avatars"><span></span><span></span><span></span><span class="more">+500</span></div>
                     </article>
-                    <article class="project-card">
-                        <div class="project-thumb thumb-2">Company Profile</div>
-                        <div class="project-body">
-                            <span class="project-tag">HTML • CSS • Flexbox</span>
-                            <h3>Kopi Senja — Website UMKM</h3>
-                            <p>Website profil untuk kedai kopi lokal, menampilkan menu, galeri, dan peta lokasi. Didesain mobile-friendly.</p>
-                            <a href="#" class="project-link">Lihat Detail →</a>
-                        </div>
+                    <article class="community-card">
+                        <h3>🏆 CODE MASTER</h3>
+                        <p>Peringkat teratas dalam pengembangan solusi front-end di lingkup komunitas belajar SMK 9 &amp; Polmed.</p>
+                        <div class="rank"><span>#1</span> Charlie Nicholas — 3,500 XP</div>
                     </article>
-                    <article class="project-card">
-                        <div class="project-thumb thumb-3">Dashboard UI</div>
-                        <div class="project-body">
-                            <span class="project-tag">UI Design • CSS Grid</span>
-                            <h3>TaskFlow — Dashboard Manajemen Tugas</h3>
-                            <p>Konsep dashboard minimalis untuk manajemen tugas harian dengan kartu statistik dan tabel responsif murni CSS.</p>
-                            <a href="#" class="project-link">Lihat Detail →</a>
-                        </div>
+                    <article class="community-card">
+                        <h3>🎮 CO-OP MODE</h3>
+                        <p>Terbuka untuk kolaborasi proyek web dev, diskusi Tailwind, atau eksperimen JavaScript.</p>
+                        <a href="#contact" class="link-neon">Join Party →</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Kontak -->
+        <!-- CONTACT -->
         <section id="contact">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-eyebrow">Kontak</span>
-                    <h2>Mari Terhubung</h2>
-                    <p class="section-desc">Punya ide atau ingin berkolaborasi? Kirim pesan melalui formulir di bawah.</p>
+                    <span class="eyebrow">// COMMS 05 — TRANSMISSION TERMINAL</span>
+                    <h2>Hubungi Saya</h2>
+                    <p>Kirim pesan atau hubungi saya langsung dari Medan, Sumatera Utara.</p>
                 </div>
+
                 <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3>Informasi Kontak</h3>
-                        <ul class="contact-list">
-                            <li><span>Email</span><a href="mailto:alex.putra@email.com">alex.putra@email.com</a></li>
-                            <li><span>Telepon</span><a href="tel:+6281234567890">+62 812-3456-7890</a></li>
-                            <li><span>Lokasi</span>Bandung, Jawa Barat, Indonesia</li>
-                            <li><span>GitHub</span><a href="#">github.com/alexputra</a></li>
-                            <li><span>LinkedIn</span><a href="#">linkedin.com/in/alexputra</a></li>
+                    <div class="glass-card comms">
+                        <h3>📡 COMMS CHANNEL</h3>
+                        <ul class="comms-list">
+                            <li><span>EMAIL</span><a href="mailto:charlie.nicholas@polmed.ac.id">charlie.nicholas@polmed.ac.id</a></li>
+                            <li><span>GITHUB</span><a href="https://github.com/charlienicholas">github.com/charlienicholas</a></li>
+                            <li><span>INSTAGRAM</span><a href="https://www.instagram.com/charlienicholas.ts/">@charlienicholas.ts</a></li>
+                            <li><span>TIKTOK</span><a href="https://www.tiktok.com/@nicholas.ts">@nicholas.ts</a></li>
+                            <li><span>BASE</span>Medan, Sumatera Utara</li>
                         </ul>
-                        <div class="contact-note">
-                            <p>Respon rata-rata &lt; 24 jam pada hari kerja. Formulir di samping bersifat statis (demo) sesuai ketentuan tugas tanpa backend.</p>
-                        </div>
                     </div>
-                    <form class="contact-form" action="#" method="post">
+
+                    <form class="glass-card form-card" action="#" method="post">
+                        <h3>✉ SEND TRANSMISSION</h3>
                         <div class="form-row">
-                            <div class="form-field">
-                                <label for="name">Nama Lengkap</label>
-                                <input type="text" id="name" name="name" placeholder="Alex Putra" required>
+                            <div class="field">
+                                <label for="name">Player Name</label>
+                                <input type="text" id="name" name="name" placeholder="Nama Anda" required>
                             </div>
-                            <div class="form-field">
+                            <div class="field">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="alex@email.com" required>
+                                <input type="email" id="email" name="email" placeholder="email@domain.com" required>
                             </div>
                         </div>
-                        <div class="form-field">
-                            <label for="subject">Subjek</label>
-                            <input type="text" id="subject" name="subject" placeholder="Tawaran proyek / Konsultasi" required>
+                        <div class="field">
+                            <label for="subject">Quest Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Tawaran proyek / Kolaborasi" required>
                         </div>
-                        <div class="form-field">
-                            <label for="message">Pesan</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tulis pesanmu di sini..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
-                        <p class="form-hint">* Formulir statis — tidak mengirim data ke server (sesuai batasan tugas tanpa JavaScript &amp; backend).</p>
+                        <button type="submit" class="btn btn-primary btn-block">⚡ TRANSMIT MESSAGE</button>
+                        <p class="hint">* Formulir statis — tanpa backend/JS sesuai ketentuan tugas.</p>
                     </form>
                 </div>
             </div>
@@ -241,12 +345,12 @@
 
     <footer>
         <div class="container footer-inner">
-            <p>&copy; 2026 Alex Putra. Dibuat dengan HTML5 &amp; CSS3 murni.</p>
-            <nav aria-label="Tautan footer">
+            <p>&copy; 2026 Charlie Nicholas — SMK Negeri 9 &amp; Polmed. Built with HTML5 &amp; CSS3 only.</p>
+            <nav>
                 <a href="#home">Beranda</a>
                 <a href="#about">Tentang</a>
-                <a href="#skills">Keahlian</a>
-                <a href="#projects">Proyek</a>
+                <a href="#skills">Loadout</a>
+                <a href="#projects">Showcase</a>
             </nav>
         </div>
     </footer>
