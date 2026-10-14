@@ -1,0 +1,9 @@
+# Ignore OpenCode internal folder
+.opencode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore screenshots if you only want code on GitHub
+# screenshots/
